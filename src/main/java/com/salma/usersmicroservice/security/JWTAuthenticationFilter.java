@@ -60,4 +60,5 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 .sign(Algorithm.HMAC256(SecParams.SECRET));
         response.addHeader("Authorization", jwt);
     }
+
 }
